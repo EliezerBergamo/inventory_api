@@ -42,7 +42,7 @@
     </ul>
     <h4>Authentication</h4>
     <ul>
-      <li>SQLAlchemy</li>
+      <li>JWT</li>
     </ul>
     <h4>Documentation</h4>
     <ul>
