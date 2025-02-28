@@ -116,6 +116,14 @@
   </p>
 
   <p align="justify">
+    To create the tables in the database, run::
+
+  ```
+  python -c "from app.database.connection import Base, engine; from app.database import models; Base.metadata.create_all(bind=engine)"
+  ```
+  </p>
+
+  <p align="justify">
     To execute this project, then run the following command:
 
   ```
@@ -144,6 +152,23 @@
 
   ```
   pytest --cov=app tests
+  ```
+  </p>
+
+  <p align="justify">
+    To run a specific test file, run something like: (Optional)
+
+  ```
+  pytest --cov=app tests/unit/test_services.py
+  ```
+  </p>
+  </div>
+
+  <p align="justify">
+    To run a specific test inside a file, run something like:: (Optional)
+
+  ```
+  pytest --cov=app tests/unit/test_services.py -k "test_create_inventory_transaction" 
   ```
   </p>
   </div>
